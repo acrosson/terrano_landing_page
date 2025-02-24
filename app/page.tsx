@@ -51,7 +51,7 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Cut your bank's efficiency ratio in half with AI Agents
+                    Cut your bank&apos;s efficiency ratio in half with AI Agents
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
                     Free up human capital by automating repetitive tasks and consolidating fragmented data into a
@@ -161,8 +161,8 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "StreamLine has completely transformed how our marketing team collaborates. We've reduced meeting
-                    time by 30% and increased our campaign output by 50%."
+                    &quot;StreamLine has completely transformed how our marketing team collaborates. We&apos;ve reduced meeting
+                    time by 30% and increased our campaign output by 50%.&quot;
                   </p>
                 </CardContent>
               </Card>
@@ -173,8 +173,8 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "The automation features alone have saved our team countless hours. Our product development cycle is
-                    now 40% faster than before we started using StreamLine."
+                    &quot;The automation features alone have saved our team countless hours. Our product development cycle is
+                    now 40% faster than before we started using StreamLine.&quot;
                   </p>
                 </CardContent>
               </Card>
@@ -185,8 +185,8 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "What impressed me most was how easily StreamLine integrated with our existing tools. The transition
-                    was smooth, and the ROI was immediate."
+                    &quot;What impressed me most was how easily StreamLine integrated with our existing tools. The transition
+                    was smooth, and the ROI was immediate.&quot;
                   </p>
                 </CardContent>
               </Card>
@@ -204,7 +204,7 @@ export default function LandingPage() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Simple, Transparent Pricing</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Choose the plan that's right for your team. All plans include a 14-day free trial.
+                  Choose the plan that&apos;s right for your team. All plans include a 14-day free trial.
                 </p>
               </div>
             </div>
