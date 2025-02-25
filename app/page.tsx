@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { Check, ChevronRight, Twitter, Github, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, CheckCircle, Construction, Lock, ShieldCheckIcon, Menu } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
+import { ChevronRight, Twitter, Github, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
 export default function LandingPage() {
@@ -144,7 +144,7 @@ export default function LandingPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <p>• Finding, training and retaining quality talent is difficult & expensive</p>
+                      <p>• Finding, training and retaining quality talent is difficult &amp; expensive</p>
                       <p>• Scaling operations is costly with human labor</p>
                     </div>
                   </CardContent>
@@ -164,7 +164,7 @@ export default function LandingPage() {
             </div>
             <div className="mt-12 space-y-4">
               <h3 className="text-xl font-bold text-center">
-                Existing solutions lack intelligence and aren't purpose built for banking:
+                Existing solutions lack intelligence and aren&apos;t purpose built for banking:
               </h3>
               <div className="mx-auto max-w-4xl">
                 <div className="overflow-hidden rounded-lg border">
@@ -179,12 +179,12 @@ export default function LandingPage() {
                     <tbody className="bg-white">
                       <tr className="border-t">
                         <td className="px-4 py-3 text-sm font-medium">Generalized AI Solution</td>
-                        <td className="px-4 py-3 text-sm text-muted-foreground">Generalized AI solutions aren't flexible enough, and don't understand the deep complexities within banking.</td>
+                        <td className="px-4 py-3 text-sm text-muted-foreground">Generalized AI solutions aren&apos;t flexible enough, and don&apos;t understand the deep complexities within banking.</td>
                         <td className="px-4 py-3 text-center">❌</td>
                       </tr>
                       <tr className="border-t">
                         <td className="px-4 py-3 text-sm font-medium">RPA Solution</td>
-                        <td className="px-4 py-3 text-sm text-muted-foreground">RPA can't handle complex workflows and UI changes. They also have high maintenance costs.</td>
+                        <td className="px-4 py-3 text-sm text-muted-foreground">RPA can&apos;t handle complex workflows and UI changes.</td>
                         <td className="px-4 py-3 text-center">❌</td>
                       </tr>
                       <tr className="border-t">
@@ -300,7 +300,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* How You'll Work With Us Section */}
+        {/* How You Will Work With Us Section */}
         <section id="partnering" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -308,7 +308,7 @@ export default function LandingPage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Partnering
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How You'll Work With Us</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How You&apos;ll Work With Us</h2>
               </div>
             </div>
             
@@ -317,18 +317,17 @@ export default function LandingPage() {
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold">Technology + Service Model</h3>
                 <p className="text-muted-foreground text-lg">
-                  Our blended technology + service model enables us to design innovative, yet scalable solutions tailored to each client's unique needs.
+                  Our blended technology + service model enables us to design innovative, yet scalable solutions tailored to each client&apos;s unique needs.
                 </p>
                 <p className="text-muted-foreground text-lg">
                   By combining cutting-edge AI with hands-on expertise, we ensure seamless implementation and long-term success.
                 </p>
                 <p className="text-muted-foreground text-lg">
-                  We don't just deliver solutions—we build lasting partnerships, working closely with our customers to drive continuous growth and efficiency.
+                  We don&apos;t just deliver solutions—we build lasting partnerships, working closely with our customers to drive continuous growth and efficiency.
                 </p>
                 <div className="mt-6 p-4 bg-white rounded-lg border border-green">
                   <p className="text-lg font-bold italic">
-                    "We'll look to find a quick-win project, where we can unlock value using our Agentic AI technology within weeks of kicking off the project."
-                  </p>
+                    &lsquo;We&apos;ll look to find a quick-win project, where we can unlock value using our Agentic AI technology within weeks of kicking off the project.&rsquo;</p>
                 </div>
               </div>
 
