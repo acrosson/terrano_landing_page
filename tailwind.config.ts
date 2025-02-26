@@ -53,7 +53,9 @@ module.exports = {
   			},
   			'blue-primary': '#0088FF',
   			'blue-secondary': '#016FD0',
+        'blue-light': '#a8d7ff',
   			green: '#00FF00',
+  			darkgrey: '#1c1c1c',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',

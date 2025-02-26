@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { ChevronRight, Twitter, Github, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Menu } from "lucide-react"
+import { ChevronRight, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Menu, Youtube } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
 export default function LandingPage() {
@@ -12,14 +12,16 @@ export default function LandingPage() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <Image
-              src="/images/Terrano_logo_black.png"
-              alt="Terrano Logo"
-              width={127}
-              height={32}
-              priority
-              className="h-8 w-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/images/Terrano_logo_black.png"
+                alt="Terrano Logo"
+                width={127}
+                height={32}
+                priority
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
@@ -30,8 +32,8 @@ export default function LandingPage() {
             <Link href="#partnering" className="text-sm font-medium hover:text-primary">
               Work With Us
             </Link>
-            <Link href="#applications" className="text-sm font-medium hover:text-primary">
-              Applications
+            <Link href="#use-cases" className="text-sm font-medium hover:text-primary">
+              Use Cases
             </Link>
             <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
               Testimonials
@@ -72,7 +74,7 @@ export default function LandingPage() {
           </Sheet>
 
           <div className="flex items-center gap-4">
-            <Button>Get Started</Button>
+            <Button className="bg-blue-primary text-white hover:bg-blue-secondary">Get Started</Button>
           </div>
         </div>
       </header>
@@ -92,7 +94,7 @@ export default function LandingPage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg">
+                  <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary">
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -266,7 +268,7 @@ export default function LandingPage() {
                   <tbody>
                     <tr className="bg-black">
                       <td className="p-4 text-center">
-                        <span className="text-lg font-bold text-white">Trust & Safety</span>
+                        <span className="text-md font-bold text-white">Trust & Safety</span>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -278,24 +280,107 @@ export default function LandingPage() {
                           height={100}
                           className="h-10 w-10"
                         />
-                        <span className="text-base font-semibold">SOC 2 Compliance</span>
+                        <span className="text-sm font-semibold">SOC 2 Compliance</span>
                       </td>
                     </tr>
                     <tr className="border-b">
                       <td className="flex items-center gap-4 p-4">
                         <Lock className="h-10 w-10 text-black-500" />
-                        <span className="text-base font-semibold">128 bit encryption</span>
+                        <span className="text-sm font-semibold">128 bit encryption</span>
                       </td>
                     </tr>
                     <tr className="border-b">
                       <td className="flex items-center gap-4 p-4">
                         <ShieldCheckIcon className="h-10 w-10 text-black-500" />
-                        <span className="text-base font-semibold">Enterprise grade security</span>
+                        <span className="text-sm font-semibold">Enterprise grade security</span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Background Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                  Our Team
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  Built by experts in AI and Banking
+                </h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl">
+                  Our team combines deep expertise in artificial intelligence with decades of financial services experience
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto max-w-4xl py-12">
+              <Card className="relative overflow-hidden">
+                <CardContent>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center p-8">
+                    <Image
+                      src="/images/companies/rbc_logo.png"
+                      alt="RBC Logo"
+                      width={120}
+                      height={120}
+                      className="h-12 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/jpm_logo.png"
+                      alt="JP Morgan Logo"
+                      width={120}
+                      height={120}
+                      className="h-10 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/gs_logo.png"
+                      alt="Goldman Sachs Logo"
+                      width={120}
+                      height={120}
+                      className="h-12 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/merrill_logo.png"
+                      alt="Merrill Lynch Logo"
+                      width={120}
+                      height={120}
+                      className="h-14 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/meta_logo.png"
+                      alt="Meta Logo"
+                      width={120}
+                      height={120}
+                      className="h-6 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/mudflap_logo.png"
+                      alt="Mudflap Logo"
+                      width={120}
+                      height={120}
+                      className="h-12 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/polymath_logo.png"
+                      alt="Polymath Robotics Logo"
+                      width={120}
+                      height={120}
+                      className="h-12 w-auto object-contain"
+                    />
+                    <Image
+                      src="/images/companies/mainstreet_logo.png"
+                      alt="Mainstreet Logo"
+                      width={120}
+                      height={120}
+                      className="h-14 w-auto object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -308,7 +393,7 @@ export default function LandingPage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Partnering
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How You&apos;ll Work With Us</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How you&apos;ll work with us</h2>
               </div>
             </div>
             
@@ -401,32 +486,37 @@ export default function LandingPage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                     Impact
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Unlock Massive Impact You Can Measure</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Unlock massive impact you can measure</h2>
+                <p className="max-w-[900px] md:text-xl">
+                  <span className="box-decoration-clone bg-blue-light text-black px-2 py-1 rounded">
+                    We&apos;ll help you <b>unlock $1M+ in value</b> through revenue growth and cost reduction with AI Agent technology.
+                  </span>
+                </p>
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2 max-w-md mx-auto">
                 <Card className="h-full">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl">10-20x</CardTitle>
+                  <CardHeader className="pb-2 text-center">
+                    <CardTitle className="text-3xl">10-20x</CardTitle>
                     <CardDescription>the throughput for your employees</CardDescription>
                   </CardHeader>
                 </Card>
                 <Card className="h-full">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl">50%</CardTitle>
+                  <CardHeader className="pb-2 text-center">
+                    <CardTitle className="text-3xl">50%</CardTitle>
                     <CardDescription>reduction in efficiency ratio</CardDescription>
                   </CardHeader>
                 </Card>
                 <Card className="h-full">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl">2x</CardTitle>
+                  <CardHeader className="pb-2 text-center">
+                    <CardTitle className="text-3xl">2x</CardTitle>
                     <CardDescription>your loan book without adding headcount</CardDescription>
                   </CardHeader>
                 </Card>
                 <Card className="h-full">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl">$XXk</CardTitle>
+                  <CardHeader className="pb-2 text-center">
+                    <CardTitle className="text-3xl">$XXk</CardTitle>
                     <CardDescription>reduction in software vendors</CardDescription>
                   </CardHeader>
                 </Card>
@@ -435,16 +525,16 @@ export default function LandingPage() {
           </div>
         </section>
 
-    {/* Application Areas Section */}
-    <section id="applications" className="w-full py-12 md:py-24 lg:py-32">
+        {/* Application Areas Section */}
+        <section id="use-cases" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Applications
+                  Use Cases
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                  Apply Our AI Agents Across Many Departments
+                  Apply our AI Agents across many departments
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
                   We can help unlock value in a variety of functional areas
@@ -519,7 +609,7 @@ export default function LandingPage() {
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">No process or workflow is too big or complex for our AI Agents.</h3>
+                  <h3 className="text-2xl font-bold"><span className="box-decoration-clone bg-blue-light text-black px-2 py-1 rounded">No process or workflow is too big or complex for our AI Agents.</span></h3>
                 </div>
               </div>
             </div>
@@ -534,9 +624,9 @@ export default function LandingPage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Testimonials
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Loved by Teams Worldwide</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Hear what people are saying</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  See what our clients have to say about how Terrano has transformed their financial institution.
+                  See what banks and credit unions are saying about how our AI Agents can impact their operations.
                 </p>
               </div>
             </div>
@@ -586,9 +676,9 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Transform Your Bank Or Credit Union?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to transform your bank or credit union?</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Join thousands of teams that have already streamlined their processes and boosted productivity.
+                  Let us help you revolutionize your banking and lending operations.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -600,55 +690,84 @@ export default function LandingPage() {
                   Schedule a Demo
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground">
-                No credit card required. 14-day free trial. Cancel anytime.
-              </p>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="w-full border-t bg-background py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row px-4 md:px-6">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/Terrano_logo_black.png"
-              alt="Terrano Logo"
-              width={127}
-              height={32}
-              priority
-              className="h-8 w-auto"
-            />
+      <footer className="w-full border-t bg-darkgrey text-white py-12">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Logo Column */}
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <Link href="/">
+                <Image
+                  src="/images/Terrano_logo_white.png"
+                  alt="Terrano Logo"
+                  width={127}
+                  height={32}
+                  priority
+                  className="h-8 w-auto"
+                />
+              </Link>
+            </div>
+
+            {/* Business Column */}
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <h3 className="text-sm font-semibold">Business</h3>
+              <nav className="flex flex-col gap-2 items-center md:items-start">
+                <Link href="#solution" className="text-sm text-gray-400 hover:text-white">
+                  Solution
+                </Link>
+                <Link href="#partnering" className="text-sm text-gray-400 hover:text-white">
+                  Work With Us
+                </Link>
+                <Link href="#use-cases" className="text-sm text-gray-400 hover:text-white">
+                  Use Cases
+                </Link>
+                <Link href="#testimonials" className="text-sm text-gray-400 hover:text-white">
+                  Testimonials
+                </Link>
+                <Link href="#contact" className="text-sm text-gray-400 hover:text-white">
+                  Contact
+                </Link>
+              </nav>
+            </div>
+
+            {/* Company Column */}
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <h3 className="text-sm font-semibold">Company</h3>
+              <nav className="flex flex-col gap-2 items-center md:items-start">
+                <Link href="#" className="text-sm text-gray-400 hover:text-white">
+                  Terms
+                </Link>
+                <Link href="#" className="text-sm text-gray-400 hover:text-white">
+                  Privacy
+                </Link>
+              </nav>
+            </div>
+
+            {/* Connect Column */}
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <h3 className="text-sm font-semibold">Connect</h3>
+              <div className="flex gap-4">
+                <Link href="#" className="text-gray-400 hover:text-white">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-white">
+                  <Youtube className="h-5 w-5" />
+                  <span className="sr-only">YouTube</span>
+                </Link>
+              </div>
+            </div>
           </div>
-          <nav className="flex gap-4 sm:gap-6">
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Terms
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Privacy
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Cookies
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
+
+          {/* Copyright */}
+          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+            &copy; {new Date().getFullYear()} Terrano. All rights reserved.
           </div>
-        </div>
-        <div className="container mt-4 text-center text-sm text-muted-foreground px-4 md:px-6">
-          &copy; {new Date().getFullYear()} Terrano. All rights reserved.
         </div>
       </footer>
     </div>
