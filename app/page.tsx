@@ -441,7 +441,7 @@ export default function LandingPage() {
                       <div className="w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
                         3
                       </div>
-                      Build, Testing
+                      Training AI Workers
                       <span className="ml-auto text-sm text-muted-foreground">2 weeks</span>
                     </CardTitle>
                   </CardHeader>
@@ -452,7 +452,7 @@ export default function LandingPage() {
                       <div className="w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
                         4
                       </div>
-                      Deployment
+                      Testing & Deployment
                       <span className="ml-auto text-sm text-muted-foreground">2 weeks</span>
                     </CardTitle>
                   </CardHeader>
