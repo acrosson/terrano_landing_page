@@ -609,7 +609,7 @@ export default function LandingPage() {
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold"><span className="box-decoration-clone bg-blue-light text-black px-2 py-1 rounded">No process or workflow is too big or complex for our AI Agents.</span></h3>
+                  <h3 className="text-2xl font-bold"><span className="box-decoration-clone bg-green-light text-black px-2 py-1 rounded">No process or workflow is too big or complex for our AI Agents.</span></h3>
                 </div>
               </div>
             </div>
