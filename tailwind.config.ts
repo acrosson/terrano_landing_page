@@ -54,6 +54,8 @@ module.exports = {
   			'blue-primary': '#0088FF',
   			'blue-secondary': '#016FD0',
         'blue-light': '#a8d7ff',
+        'chart-blue-primary': '#77BFFF',
+        'chart-blue-secondary': '#4F8FC8',
         'green-light': '#a8ffb2',
   			green: '#00FF00',
   			darkgrey: '#1c1c1c',
