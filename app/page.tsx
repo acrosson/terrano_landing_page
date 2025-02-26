@@ -73,7 +73,7 @@ export default function LandingPage() {
             </SheetContent>
           </Sheet>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <Button className="bg-blue-primary text-white hover:bg-blue-secondary">Get Started</Button>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function LandingPage() {
                     Cut your bank&apos;s efficiency ratio in half with AI Agents
                   </h1>
                   <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                    Enterprise grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.
+                    Enterprise-grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -158,7 +158,7 @@ export default function LandingPage() {
                   <CardContent>
                     <div className="space-y-2 text-sm text-muted-foreground">
                       <p>• Processing capacity per employee is limited</p>
-                      <p>• Humans often perform menial tasks and duplicative processes</p>
+                      <p>• Humans often perform repetitive and duplicative tasks</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -211,10 +211,10 @@ export default function LandingPage() {
                   Solution
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center">
-                  We built enterprise grade AI Agents to help
+                  We built enterprise-grade AI Agents to help
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Our AI Agents are purpose built for banking operations. These AI Agents can perform a variety of operational tasks. They fill the gaps that exist in your current software tech stack, ensuring data is synced between systems. They provide a secure, reliable and cost effective way to scale your operations.
+                  Our AI Agents are purpose built for banking operations. These AI Agents can perform a variety of operational tasks. They fill the gaps that exist in your current software tech stack, ensuring data is synced between systems. They provide a secure, reliable, and cost-effective way to scale your operations.
                 </p>
               </div>
             </div>
@@ -292,7 +292,7 @@ export default function LandingPage() {
                     <tr className="border-b">
                       <td className="flex items-center gap-4 p-4">
                         <ShieldCheckIcon className="h-10 w-10 text-black-500" />
-                        <span className="text-sm font-semibold">Enterprise grade security</span>
+                        <span className="text-sm font-semibold">Enterprise-grade security</span>
                       </td>
                     </tr>
                   </tbody>
@@ -408,11 +408,11 @@ export default function LandingPage() {
                   By combining cutting-edge AI with hands-on expertise, we ensure seamless implementation and long-term success.
                 </p>
                 <p className="text-muted-foreground text-lg">
-                  We don&apos;t just deliver solutions—we build lasting partnerships, working closely with our customers to drive continuous growth and efficiency.
+                  We don&apos;t just deliver solutions—we build lasting partnerships and work closely with our customers to drive continuous growth and efficiency.
                 </p>
                 <div className="mt-6 p-4 bg-white rounded-lg border border-green">
                   <p className="text-lg font-bold italic">
-                    &lsquo;We&apos;ll look to find a quick-win project, where we can unlock value using our Agentic AI technology within weeks of kicking off the project.&rsquo;</p>
+                    &ldquo;We&apos;ll start with a quick-win project to unlock value using our Agentic AI technology, delivering measurable impact within weeks.&rdquo;</p>
                 </div>
               </div>
 
