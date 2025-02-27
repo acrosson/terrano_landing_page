@@ -1,10 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/components/ui/button"
-import { DualAxisChart } from "@/app/components/DualAxisChart"
+import { HeroGraphic } from '@/app/components/HeroGraphic'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
 import { ChevronRight, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Menu, Youtube } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
+
 
 export default function LandingPage() {
   return (
@@ -104,7 +105,7 @@ export default function LandingPage() {
                   </Button>
                 </div>
               </div>
-              <DualAxisChart />
+              <HeroGraphic />
             </div>
           </div>
         </section>
@@ -121,6 +122,15 @@ export default function LandingPage() {
                   Banks and credit unions face a myriad of operational challenges
                 </h2>
               </div>
+            </div>
+            <div className="max-w-5xl mx-auto bg-gradient-to-r from-grey-light-two to-grey-light-one p-8 mt-8 mb-0 rounded-lg flex justify-center items-center">
+              <Image 
+                src="/images/problem_map_image.png"
+                alt="Problem Map"
+                width={926}
+                height={914}
+                className="w-auto max-h-[400px] mt-3 mb-3"
+              />
             </div>
             <div className="mx-auto max-w-5xl py-12">
               <div className="grid gap-6 md:grid-cols-3">
@@ -477,16 +487,11 @@ export default function LandingPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                    Impact
+                  Impact
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Unlock massive impact you can measure</h2>
-                <p className="max-w-[900px] md:text-xl">
-                  <span className="box-decoration-clone bg-blue-light text-black px-2 py-1 rounded">
-                    We&apos;ll help you <b>unlock $1M+ in value</b> through revenue growth and cost reduction with AI Agent technology.
-                  </span>
-                </p>
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
@@ -516,6 +521,13 @@ export default function LandingPage() {
                   </CardHeader>
                 </Card>
               </div>
+            </div>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <p className="max-w-[900px] md:text-xl">
+                <span className="box-decoration-clone bg-green-light text-black px-2 py-1 rounded">
+                    We&apos;ll help you <b>unlock $1M+ in value</b> through revenue growth and cost reduction with AI Agent technology.
+                  </span>
+              </p>
             </div>
           </div>
         </section>
