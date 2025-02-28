@@ -25,19 +25,16 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
-            <Link href="#solution" className="text-sm font-medium hover:text-primary">
+            <Link href="/#solution" className="text-sm font-medium hover:text-primary">
               Solution
             </Link>
-            <Link href="#partnering" className="text-sm font-medium hover:text-primary">
+            <Link href="/#partnering" className="text-sm font-medium hover:text-primary">
               Work With Us
             </Link>
-            <Link href="#use-cases" className="text-sm font-medium hover:text-primary">
+            <Link href="/#use-cases" className="text-sm font-medium hover:text-primary">
               Use Cases
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
-              Testimonials
-            </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-primary">
+            <Link href="/contact" className="text-sm font-medium hover:text-primary">
               Contact
             </Link>
           </nav>
@@ -53,19 +50,16 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             <SheetContent side="right">
               <SheetTitle>Navigation Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
-                <Link href="#solution" className="text-sm font-medium hover:text-primary">
+                <Link href="/#solution" className="text-sm font-medium hover:text-primary">
                   Solution
                 </Link>
-                <Link href="#partnering" className="text-sm font-medium hover:text-primary">
+                <Link href="/#partnering" className="text-sm font-medium hover:text-primary">
                   Work With Us
                 </Link>
-                <Link href="#applications" className="text-sm font-medium hover:text-primary">
+                <Link href="/#use-cases" className="text-sm font-medium hover:text-primary">
                   Applications
                 </Link>
-                <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
-                  Testimonials
-                </Link>
-                <Link href="#contact" className="text-sm font-medium hover:text-primary">
+                <Link href="/contact" className="text-sm font-medium hover:text-primary">
                   Contact
                 </Link>
               </nav>
@@ -105,19 +99,16 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-sm font-semibold">Business</h3>
               <nav className="flex flex-col gap-2 items-center md:items-start">
-                <Link href="#solution" className="text-sm text-gray-400 hover:text-white">
+                <Link href="/#solution" className="text-sm text-gray-400 hover:text-white">
                   Solution
                 </Link>
-                <Link href="#partnering" className="text-sm text-gray-400 hover:text-white">
+                <Link href="/#partnering" className="text-sm text-gray-400 hover:text-white">
                   Work With Us
                 </Link>
-                <Link href="#use-cases" className="text-sm text-gray-400 hover:text-white">
+                <Link href="/#use-cases" className="text-sm text-gray-400 hover:text-white">
                   Use Cases
                 </Link>
-                <Link href="#testimonials" className="text-sm text-gray-400 hover:text-white">
-                  Testimonials
-                </Link>
-                <Link href="#contact" className="text-sm text-gray-400 hover:text-white">
+                <Link href="/contact" className="text-sm text-gray-400 hover:text-white">
                   Contact
                 </Link>
               </nav>
