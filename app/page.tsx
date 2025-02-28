@@ -1,10 +1,8 @@
-import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/app/components/ui/button"
 import { HeroGraphic } from '@/app/components/HeroGraphic'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { ChevronRight, Linkedin, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Menu, Youtube } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
+import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from "lucide-react"
 import { MainLayout } from '@/app/components/MainLayout'
 
 export default function LandingPage() {
