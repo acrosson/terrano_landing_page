@@ -3,21 +3,29 @@ import type { Metadata } from "next"
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Terrano - Cut your bank's efficiency ratio in half!",
+  title: "Terrano - Double revenue without doubling headcount",
   description:
-    "Enterprise-grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.",
+    "Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks",
   metadataBase: new URL("https://terrano.ai"),
   openGraph: {
-    title: "Terrano - Cut your bank's efficiency ratio in half!",
+    title: "Terrano - Double revenue without doubling headcount",
     description:
-      "Enterprise-grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.",
+      "Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks",
     type: "website",
+    images: [
+      {
+        url: '/images/og_image_min.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
-    title: "Terrano - Cut your bank's efficiency ratio in half!",
+    title: "Terrano - Double revenue without doubling headcount",
     description:
-      "Enterprise-grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.",
+      "Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks",
     card: "summary_large_image",
+    images: ['/images/og_image_min.jpg'],
   },
 }
 

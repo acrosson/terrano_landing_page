@@ -5,9 +5,9 @@ import Image from "next/image";
 export function HeroGraphic() {
   return (
     <div className="bg-gradient-to-br from-chart-blue-primary to-chart-blue-secondary p-2.5 sm:p-8 mt-5">
-      <div className="w-full h-[400px] p-12 bg-white rounded-lg shadow-lg relative">
+      <div className="w-full h-[200px] sm:h-[400px] p-2 sm:p-8 bg-white rounded-lg shadow-lg relative">
         <Image 
-          src="/images/hero_graphic.png" 
+          src="/images/hero_graphic_2.png" 
           alt="Hero Graphic"
           className="w-full h-full object-contain"
           fill={false}

@@ -89,10 +89,10 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center space-y-4 w-full">
                 <div className="space-y-2 w-full">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                    Cut your bank&apos;s efficiency ratio in half with AI Agents
+                    Double revenue without doubling headcount
                   </h1>
                   <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                    Enterprise-grade AI Agents built specifically for banks and credit unions. Free up human capital by automating repetitive tasks and consolidating fragmented data.
+                    <b>Enterprise-grade AI</b> Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up human capital by automating repetitive tasks and consolidating fragmented data.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
