@@ -67,7 +67,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           </Sheet>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button className="bg-blue-primary text-white hover:bg-blue-secondary">Get Started</Button>
+            <Button className="bg-blue-primary text-white hover:bg-blue-secondary"><Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">Get Started</Link></Button>
           </div>
         </div>
       </header>

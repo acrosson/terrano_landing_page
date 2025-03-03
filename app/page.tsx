@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/app/components/ui/button"
 import { HeroGraphic } from '@/app/components/HeroGraphic'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
@@ -22,12 +23,16 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary">
-                  Learn More
-                  <ChevronRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
+                  <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                    Learn More
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
-                <Button variant="outline" size="lg">
-                  Schedule a Demo
+                <Button variant="outline" size="lg" asChild>
+                  <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                    Schedule a Demo
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -615,12 +620,16 @@ export default function LandingPage() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg">
-                Learn More
-                <ChevronRight className="ml-2 h-4 w-4" />
+              <Button size="lg" asChild>
+                <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                  Learn More
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg">
-                Schedule a Demo
+              <Button variant="outline" size="lg" asChild>
+                <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                  Schedule a Demo
+                </Link>
               </Button>
             </div>
           </div>

@@ -18,9 +18,15 @@ export default function ContactPage() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary">
-                Contact Us
-                <ChevronRight className="ml-2 h-4 w-4" />
+              <Button
+                size="lg"
+                className="bg-blue-primary text-white hover:bg-blue-secondary"
+                asChild
+              >
+                <a href="https://tally.so/r/3NReZ0" target="_blank" rel="noopener noreferrer">
+                  Contact Us
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
