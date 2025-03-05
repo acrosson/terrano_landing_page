@@ -100,7 +100,7 @@ export default function LandingPage() {
               </Card>
             </div>
           </div>
-          <div className="mt-12 space-y-4">
+          <div className="mt-12 space-y-4 hidden">
             <h3 className="text-xl font-bold text-center">
               Existing solutions lack intelligence and aren&apos;t purpose built for banking:
             </h3>
