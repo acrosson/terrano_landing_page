@@ -429,7 +429,7 @@ export default function LandingPage() {
             <div className="grid gap-6 md:grid-cols-2 max-w-md mx-auto">
               <Card className="h-full">
                 <CardHeader className="pb-2 text-center">
-                  <CardTitle className="text-3xl">10-20x</CardTitle>
+                  <CardTitle className="text-3xl">5-15x</CardTitle>
                   <CardDescription>the throughput for your employees</CardDescription>
                 </CardHeader>
               </Card>
