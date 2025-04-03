@@ -14,7 +14,7 @@ export default function ContactPage() {
                 Get in Touch
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                We&apos;re here to help you transform your banking operations with AI. Let&apos;s discuss how we can work together.
+                We&apos;re here to help you transform your company&apos;s operations with AI. Let&apos;s discuss how we can work together.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

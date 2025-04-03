@@ -99,6 +99,9 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-sm font-semibold">Business</h3>
               <nav className="flex flex-col gap-2 items-center md:items-start">
+                <Link href="/" className="text-sm text-gray-400 hover:text-white">
+                  Home
+                </Link>
                 <Link href="/#solution" className="text-sm text-gray-400 hover:text-white">
                   Solution
                 </Link>

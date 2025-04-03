@@ -16,10 +16,10 @@ export default function LandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Double revenue without doubling headcount
+                  The ERP for modern businesses.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  <b>Enterprise-grade AI</b> Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up human capital by automating repetitive tasks and consolidating fragmented data.
+                  Power your business operations with the most advanced operating system. Powered by AI.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -42,7 +42,7 @@ export default function LandingPage() {
       </section>
 
       {/* Challenges Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -139,7 +139,7 @@ export default function LandingPage() {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="w-full py-12 md:py-24 lg:py-32">
+      <section id="solution" className="w-full py-12 md:py-24 lg:py-32 hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4">
             <div className="space-y-2 text-center">
@@ -239,7 +239,7 @@ export default function LandingPage() {
       </section>
 
       {/* Team Background Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -322,7 +322,7 @@ export default function LandingPage() {
       </section>
 
       {/* How You Will Work With Us Section */}
-      <section id="partnering" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section id="partnering" className="w-full py-12 md:py-24 lg:py-32 bg-muted hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -415,7 +415,7 @@ export default function LandingPage() {
       </section>
 
       {/* Impact Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-4">
@@ -464,7 +464,7 @@ export default function LandingPage() {
       </section>
 
       {/* Application Areas Section */}
-      <section id="use-cases" className="w-full py-12 md:py-24 lg:py-32">
+      <section id="use-cases" className="w-full py-12 md:py-24 lg:py-32 hidden">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -614,9 +614,9 @@ export default function LandingPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to transform your bank or credit union?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to transform your business operations?</h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Let us help you revolutionize your banking and lending operations.
+                Let us help you transform your business operations with using the most advanced ERP system.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
