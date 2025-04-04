@@ -20,7 +20,7 @@ export default function DemoPage() {
 
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
-                <Link href="/signup/form">
+                <Link href="https://tally.so/r/mV4kej">
                   Schedule Demo
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
