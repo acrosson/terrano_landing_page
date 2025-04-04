@@ -1,6 +1,26 @@
+'use client';
+
+import { useEffect } from 'react';
 import { MainLayout } from '@/app/components/MainLayout';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export default function SignupPage() {
+  useEffect(() => {
+    const sendConversionEvent = () => {
+      console.log('Sending conversion event');
+      sendGAEvent('event', 'conversion_event_submit_lead_form', {
+        'value': 1.0,
+        'currency': 'USD'
+      });
+    };
+
+    // Try to send immediately, fall back to delayed send if GA isn't ready
+    if (typeof window !== 'undefined' && window.gtag) {
+      sendConversionEvent();
+    } else {
+      setTimeout(sendConversionEvent, 1000);
+    }
+  }, []);
   return (
     <MainLayout landingPage="/signup">
       <section className="w-full py-12 md:py-24">
