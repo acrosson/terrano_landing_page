@@ -1,6 +1,6 @@
-import { Button } from "@/app/components/ui/button"
-import { MainLayout } from '@/app/components/MainLayout'
-import { ChevronRight } from "lucide-react"
+import { Button } from '@/app/components/ui/button';
+import { MainLayout } from '@/app/components/MainLayout';
+import { ChevronRight } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -33,5 +33,5 @@ export default function ContactPage() {
         </div>
       </section>
     </MainLayout>
-  )
+  );
 }

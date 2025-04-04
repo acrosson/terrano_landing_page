@@ -1,20 +1,20 @@
-import { getMarkdownContent } from '@/lib/markdown'
-import { MainLayout } from '@/app/components/MainLayout'
+import { getMarkdownContent } from '@/lib/markdown';
+import { MainLayout } from '@/app/components/MainLayout';
 export default async function PrivacyPage() {
-  const content = await getMarkdownContent('privacy.md')
-  
+  const content = await getMarkdownContent('privacy.md');
+
   return (
     <MainLayout>
       <div className="flex min-h-screen flex-col">
         <main className="flex-1">
           <div className="container max-w-3xl px-4 py-12">
-            <div 
+            <div
               className="prose prose-slate max-w-none"
-              dangerouslySetInnerHTML={{ __html: content.contentHtml }} 
+              dangerouslySetInnerHTML={{ __html: content.contentHtml }}
             />
           </div>
         </main>
       </div>
     </MainLayout>
-  )
-} 
+  );
+}

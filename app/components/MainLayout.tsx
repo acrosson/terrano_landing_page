@@ -1,17 +1,23 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/app/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
-import { Menu, Linkedin, Youtube } from "lucide-react"
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '@/app/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
+import { Menu, Linkedin, Youtube } from 'lucide-react';
 
-export function MainLayout({ children }: { children: React.ReactNode }) {
+export function MainLayout({
+  children,
+  landingPage,
+}: {
+  children: React.ReactNode;
+  landingPage?: string;
+}) {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <Link href="/">
+            <Link href={landingPage || '/'}>
               <Image
                 src="/images/Terrano_logo_black.png"
                 alt="Terrano Logo"
@@ -22,21 +28,23 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               />
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
-            <Link href="/#solution" className="text-sm font-medium hover:text-primary">
+            <Link href={`${landingPage || ''}/#solution`} className="text-sm font-medium hover:text-primary">
               Solution
             </Link>
-            <Link href="/#partnering" className="text-sm font-medium hover:text-primary">
+            <Link href={`${landingPage || ''}/#partnering`} className="text-sm font-medium hover:text-primary">
               Work With Us
             </Link>
-            <Link href="/#use-cases" className="text-sm font-medium hover:text-primary">
+            <Link href={`${landingPage || ''}/#use-cases`} className="text-sm font-medium hover:text-primary">
               Use Cases
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary">
-              Contact
-            </Link>
+            { landingPage === undefined && (
+              <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
+                Contact
+              </Link>
+            )}
           </nav>
 
           {/* Mobile Navigation */}
@@ -50,24 +58,26 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             <SheetContent side="right">
               <SheetTitle>Navigation Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
-                <Link href="/#solution" className="text-sm font-medium hover:text-primary">
+                <Link href={`${landingPage || ''}/#solution`} className="text-sm font-medium hover:text-primary">
                   Solution
                 </Link>
-                <Link href="/#partnering" className="text-sm font-medium hover:text-primary">
+                <Link href={`${landingPage || ''}/#partnering`} className="text-sm font-medium hover:text-primary">
                   Work With Us
                 </Link>
-                <Link href="/#use-cases" className="text-sm font-medium hover:text-primary">
+                <Link href={`${landingPage || ''}/#use-cases`} className="text-sm font-medium hover:text-primary">
                   Applications
                 </Link>
-                <Link href="/contact" className="text-sm font-medium hover:text-primary">
-                  Contact
-                </Link>
+                { landingPage === undefined && (
+                  <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
+                    Contact
+                  </Link>
+                )}
               </nav>
             </SheetContent>
           </Sheet>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button className="bg-blue-primary text-white hover:bg-blue-secondary"><Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">Get Started</Link></Button>
+            <Button className="bg-blue-primary text-white hover:bg-blue-secondary"><Link href="/signup" rel="noopener noreferrer">Get Started</Link></Button>
           </div>
         </div>
       </header>
@@ -83,7 +93,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Logo Column */}
             <div className="flex flex-col gap-4 items-center md:items-start">
-              <Link href="/">
+              <Link href={landingPage || '/'}>
                 <Image
                   src="/images/Terrano_logo_white.png"
                   alt="Terrano Logo"
@@ -99,21 +109,23 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             <div className="flex flex-col gap-4 items-center md:items-start">
               <h3 className="text-sm font-semibold">Business</h3>
               <nav className="flex flex-col gap-2 items-center md:items-start">
-                <Link href="/" className="text-sm text-gray-400 hover:text-white">
+                <Link href={landingPage || '/'} className="text-sm text-gray-400 hover:text-white">
                   Home
                 </Link>
-                <Link href="/#solution" className="text-sm text-gray-400 hover:text-white">
+                <Link href={`${landingPage || ''}/#solution`} className="text-sm text-gray-400 hover:text-white">
                   Solution
                 </Link>
-                <Link href="/#partnering" className="text-sm text-gray-400 hover:text-white">
+                <Link href={`${landingPage || ''}/#partnering`} className="text-sm text-gray-400 hover:text-white">
                   Work With Us
                 </Link>
-                <Link href="/#use-cases" className="text-sm text-gray-400 hover:text-white">
+                <Link href={`${landingPage || ''}/#use-cases`} className="text-sm text-gray-400 hover:text-white">
                   Use Cases
                 </Link>
-                <Link href="/contact" className="text-sm text-gray-400 hover:text-white">
-                  Contact
-                </Link>
+                { landingPage === undefined && (
+                  <Link href={'/contact'} className="text-sm text-gray-400 hover:text-white">
+                    Contact
+                  </Link>
+                )}
               </nav>
             </div>
 
@@ -153,5 +165,5 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
         </div>
       </footer>
     </div>
-  )
-} 
+  );
+}

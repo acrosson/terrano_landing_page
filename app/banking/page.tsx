@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/components/ui/button"
-import { HeroGraphic } from '@/app/components/HeroGraphic'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from "lucide-react"
-import { MainLayout } from '@/app/components/MainLayout'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/app/components/ui/button';
+import { HeroGraphic } from '@/app/components/HeroGraphic';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
+import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from 'lucide-react';
+import { MainLayout } from '@/app/components/MainLayout';
 
 export default function BankingLandingPage() {
   return (
@@ -55,7 +55,7 @@ export default function BankingLandingPage() {
             </div>
           </div>
           <div className="max-w-5xl mx-auto bg-gradient-to-r from-grey-light-two to-grey-light-one p-8 mt-8 mb-0 rounded-lg flex justify-center items-center">
-            <Image 
+            <Image
               src="/images/problem_map_image.png"
               alt="Problem Map"
               width={926}
@@ -196,7 +196,7 @@ export default function BankingLandingPage() {
               </div>
             </div>
           </div>
-          
+
           {/* Key Features Table */}
           <div className="mx-auto max-w-xs py-12">
             <div className="overflow-hidden rounded-lg border">
@@ -332,7 +332,7 @@ export default function BankingLandingPage() {
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How you&apos;ll work with us</h2>
             </div>
           </div>
-          
+
           <div className="mx-auto max-w-7xl py-12 grid gap-8 lg:grid-cols-2">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
@@ -636,5 +636,5 @@ export default function BankingLandingPage() {
         </div>
       </section>
     </MainLayout>
-  )
+  );
 }

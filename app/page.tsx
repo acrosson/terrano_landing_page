@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/app/components/ui/button"
-import { HeroGraphic } from '@/app/components/HeroGraphic'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from "lucide-react"
-import { MainLayout } from '@/app/components/MainLayout'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/app/components/ui/button';
+import { HeroGraphic } from '@/app/components/HeroGraphic';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
+import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from 'lucide-react';
+import { MainLayout } from '@/app/components/MainLayout';
 
 export default function LandingPage() {
   return (
@@ -24,13 +24,13 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
-                  <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                  <Link href="/signup" rel="noopener noreferrer">
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                  <Link href="/demo" rel="noopener noreferrer">
                     Schedule a Demo
                   </Link>
                 </Button>
@@ -55,7 +55,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="max-w-5xl mx-auto bg-gradient-to-r from-grey-light-two to-grey-light-one p-8 mt-8 mb-0 rounded-lg flex justify-center items-center">
-            <Image 
+            <Image
               src="/images/problem_map_image.png"
               alt="Problem Map"
               width={926}
@@ -196,7 +196,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-          
+
           {/* Key Features Table */}
           <div className="mx-auto max-w-xs py-12">
             <div className="overflow-hidden rounded-lg border">
@@ -332,7 +332,7 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How you&apos;ll work with us</h2>
             </div>
           </div>
-          
+
           <div className="mx-auto max-w-7xl py-12 grid gap-8 lg:grid-cols-2">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
@@ -621,13 +621,13 @@ export default function LandingPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" asChild>
-                <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                <Link href="/signup" rel="noopener noreferrer">
                   Learn More
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="https://tally.so/r/mV4kej" target="_blank" rel="noopener noreferrer">
+                <Link href="/demo" rel="noopener noreferrer">
                   Schedule a Demo
                 </Link>
               </Button>
@@ -636,5 +636,5 @@ export default function LandingPage() {
         </div>
       </section>
     </MainLayout>
-  )
+  );
 }

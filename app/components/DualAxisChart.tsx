@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -26,8 +26,8 @@ export function DualAxisChart() {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
-            <XAxis 
-              dataKey="time" 
+            <XAxis
+              dataKey="time"
             />
             <YAxis
               yAxisId="left"
@@ -35,7 +35,7 @@ export function DualAxisChart() {
                 value: 'Efficiency Ratio (%)',
                 angle: -90,
                 position: 'insideLeft',
-                style: { textAnchor: 'middle' }
+                style: { textAnchor: 'middle' },
               }}
               domain={[30, 75]}
               tickCount={6}
@@ -47,12 +47,12 @@ export function DualAxisChart() {
                 value: 'Profit Margin (%)',
                 angle: 90,
                 position: 'insideRight',
-                style: { textAnchor: 'middle' }
+                style: { textAnchor: 'middle' },
               }}
               domain={[16, 40]}
               tickCount={6}
             />
-            <Tooltip 
+            <Tooltip
               contentStyle={{
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
                 border: '1px solid #ccc',
@@ -83,4 +83,4 @@ export function DualAxisChart() {
       </div>
     </div>
   );
-} 
+}
