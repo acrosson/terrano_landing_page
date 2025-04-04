@@ -5,14 +5,14 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Terrano - Double revenue without doubling headcount',
+  title: 'Terrano - The ERP for modern businesses',
   description:
-    'Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks',
+    'The most advanced ERP for modern businesses. Completely free. Powered by AI.',
   metadataBase: new URL('https://terrano.ai'),
   openGraph: {
-    title: 'Terrano - Double revenue without doubling headcount',
+    title: 'Terrano - The ERP for modern businesses',
     description:
-      'Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks',
+      'The most advanced ERP for modern businesses. Completely free. Powered by AI.',
     type: 'website',
     images: [
       {
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: 'Terrano - Double revenue without doubling headcount',
+    title: 'Terrano - The ERP for modern businesses',
     description:
-      'Enterprise-grade AI Agents built specifically for banks and credit unions. Supercharge your team with AI Agents. Free up capacity by automating repetitive tasks',
+      'The most advanced ERP for modern businesses. Completely free. Powered by AI.',
     card: 'summary_large_image',
     images: ['/images/og_image_min.jpg'],
   },
