@@ -31,15 +31,6 @@ export function MainLayout({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
-            <Link href={`${landingPage || ''}/#solution`} className="text-sm font-medium hover:text-primary">
-              Solution
-            </Link>
-            <Link href={`${landingPage || ''}/#partnering`} className="text-sm font-medium hover:text-primary">
-              Work With Us
-            </Link>
-            <Link href={`${landingPage || ''}/#use-cases`} className="text-sm font-medium hover:text-primary">
-              Use Cases
-            </Link>
             { landingPage === undefined && (
               <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
                 Contact
@@ -58,15 +49,6 @@ export function MainLayout({
             <SheetContent side="right">
               <SheetTitle>Navigation Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
-                <Link href={`${landingPage || ''}/#solution`} className="text-sm font-medium hover:text-primary">
-                  Solution
-                </Link>
-                <Link href={`${landingPage || ''}/#partnering`} className="text-sm font-medium hover:text-primary">
-                  Work With Us
-                </Link>
-                <Link href={`${landingPage || ''}/#use-cases`} className="text-sm font-medium hover:text-primary">
-                  Applications
-                </Link>
                 { landingPage === undefined && (
                   <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
                     Contact
