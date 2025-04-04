@@ -8,18 +8,26 @@ export default function SignupPage() {
   useEffect(() => {
     const sendConversionEvent = () => {
       console.log('Sending conversion event');
-      sendGAEvent('event', 'conversion_event_submit_lead_form', {
-        'value': 1.0,
-        'currency': 'USD'
-      });
+      try {
+        sendGAEvent('conversion_event_submit_lead_form');
+      } catch (error) {
+        console.error('Failed to send GA event:', error);
+      }
     };
 
-    // Try to send immediately, fall back to delayed send if GA isn't ready
-    if (typeof window !== 'undefined' && window.gtag) {
-      sendConversionEvent();
-    } else {
-      setTimeout(sendConversionEvent, 1000);
-    }
+    let attempts = 0;
+    const maxAttempts = 5;
+    
+    const trySendEvent = () => {
+      if (typeof window !== 'undefined') {
+        sendConversionEvent();
+      } else if (attempts < maxAttempts) {
+        attempts++;
+        setTimeout(trySendEvent, 1000);
+      }
+    };
+
+    trySendEvent();
   }, []);
   return (
     <MainLayout landingPage="/signup">
