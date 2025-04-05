@@ -6,6 +6,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app
 import { ChevronRight, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Rocket, Cpu } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
 
+export const metadata = {
+  title: 'Free MRP Software for Manufacturers',
+  description: 'AI-powered MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started free.',
+};
+
 export default function MRPLandingPage() {
   return (
     <MainLayout landingPage="/mrp">
