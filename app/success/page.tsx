@@ -6,6 +6,7 @@ import { sendGAEvent } from '@next/third-parties/google';
 
 export default function SignupPage() {
   useEffect(() => {
+    console.log('Loading success page');
     const sendConversionEvent = () => {
       console.log('Sending conversion event');
       try {
@@ -17,7 +18,7 @@ export default function SignupPage() {
 
     let attempts = 0;
     const maxAttempts = 5;
-    
+
     const trySendEvent = () => {
       if (typeof window !== 'undefined') {
         sendConversionEvent();
