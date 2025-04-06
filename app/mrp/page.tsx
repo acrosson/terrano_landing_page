@@ -7,8 +7,8 @@ import { ChevronRight, Database, LineChart, Users, DollarSign, Lock, ShieldCheck
 import { MainLayout } from '@/app/components/MainLayout';
 
 export const metadata = {
-  title: 'Free MRP Software for Manufacturers',
-  description: 'AI-powered MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started free.',
+  title: 'Free cloud-based MRP Software for Manufacturers',
+  description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started.',
 };
 
 export default function MRPLandingPage() {
@@ -21,7 +21,7 @@ export default function MRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Modern MRP Software Built for Manufacturers. <br />No Monthly Fees.
+                  Modern MRP cloud-based Software Built for Manufacturers. <br />No Monthly Fees.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
                   Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No monthly fees. No steep learning curves.
@@ -30,7 +30,7 @@ export default function MRPLandingPage() {
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
                   <Link href="/signup">
-                    Get Started Free
+                    Get Started
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -514,7 +514,7 @@ export default function MRPLandingPage() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
                 <Link href="/signup">
-                  Start Free
+                  Start Now
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
