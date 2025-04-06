@@ -46,6 +46,20 @@ export default function MRPLandingPage() {
         </div>
       </section>
 
+      {/* Free Cloud MRP Section */}
+      <section className="w-full py-12 md:py-16 bg-gradient-to-br from-blue-400 to-blue-secondary">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-white">
+              Cloud-based MRP Software for Free. Absolutely!
+            </h2>
+            <p className="max-w-[900px] text-white/80 md:text-xl">
+              We believe every manufacturer deserves access to powerful tools. That&apos;s why we offer a completely free plan with no time limits or hidden fees. Get all the core features you need to run your factory efficiently.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Challenges Section - Update to "What Makes Us Different" */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container px-4 md:px-6">
