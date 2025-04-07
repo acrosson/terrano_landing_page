@@ -7,7 +7,7 @@ import { ChevronRight, Database, LineChart, Users, DollarSign, Lock, ShieldCheck
 import { MainLayout } from '@/app/components/MainLayout';
 
 export const metadata = {
-  title: 'Free cloud-based MRP System for Manufacturers',
+  title: 'Free Material Resource Planning Software',
   description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started.',
 };
 
@@ -21,7 +21,7 @@ export default function MRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Modern MRP System Built for Manufacturers. <br />For Free. No Monthly Fees.
+                Material Resource Planning Software (MRP). <br />For Free. No Monthly Fees.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
                   Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No monthly fees. No steep learning curves.
@@ -51,7 +51,7 @@ export default function MRPLandingPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-white">
-              Cloud-based MRP System for Free. Absolutely!
+              Cloud-based MRP Software for Free. Absolutely!
             </h2>
             <p className="max-w-[900px] text-white/80 md:text-xl">
               We believe every manufacturer deserves access to powerful tools. That&apos;s why we offer a completely free plan with no time limits or hidden fees. Get all the core features you need to run your factory efficiently.
@@ -415,89 +415,6 @@ export default function MRPLandingPage() {
           </div>
         </div>
       </section>
-
-      {/* Team Background Section */}
-      {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                Our Team
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                Built by experts in Manufacturing & Technology
-              </h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                Our team combines deep expertise in manufacturing and technology with decades of financial services experience
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto max-w-4xl py-12">
-            <Card className="relative overflow-hidden">
-              <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center p-8">
-                  <Image
-                    src="/images/companies/rbc_logo.png"
-                    alt="RBC Logo"
-                    width={120}
-                    height={120}
-                    className="h-12 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/jpm_logo.png"
-                    alt="JP Morgan Logo"
-                    width={120}
-                    height={120}
-                    className="h-10 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/gs_logo.png"
-                    alt="Goldman Sachs Logo"
-                    width={120}
-                    height={120}
-                    className="h-12 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/merrill_logo.png"
-                    alt="Merrill Lynch Logo"
-                    width={120}
-                    height={120}
-                    className="h-14 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/meta_logo.png"
-                    alt="Meta Logo"
-                    width={120}
-                    height={120}
-                    className="h-6 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/mudflap_logo.png"
-                    alt="Mudflap Logo"
-                    width={120}
-                    height={120}
-                    className="h-12 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/polymath_logo.png"
-                    alt="Polymath Robotics Logo"
-                    width={120}
-                    height={120}
-                    className="h-12 w-auto object-contain"
-                  />
-                  <Image
-                    src="/images/companies/mainstreet_logo.png"
-                    alt="Mainstreet Logo"
-                    width={120}
-                    height={120}
-                    className="h-14 w-auto object-contain"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
 
       {/* Final CTA Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
