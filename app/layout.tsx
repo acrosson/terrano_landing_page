@@ -1,6 +1,7 @@
 import type React from 'react';
 import type { Metadata } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 
 import './globals.css';
 
@@ -40,6 +41,22 @@ export default function RootLayout({
     <html lang="en">
       <body>{children}</body>
       <GoogleAnalytics gaId={'G-GLD4MP5ZN8'} />
+      <Script
+        id="hotjarAnalytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:5364262,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `,
+        }}
+      />
     </html>
   );
 }
