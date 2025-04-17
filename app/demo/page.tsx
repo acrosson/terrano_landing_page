@@ -1,11 +1,20 @@
+'use client';
+
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
 
 export default function DemoPage() {
+  let landingPage = useSearchParams().get('landingPage');
+  if (!landingPage) {
+    landingPage = '/';
+  } else {
+    landingPage = `/${landingPage}`;
+  }
   return (
-    <MainLayout landingPage="/demo">
+    <MainLayout landingPage={landingPage}>
       <section className="w-full py-12 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">

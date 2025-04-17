@@ -29,13 +29,13 @@ export default function MRPSmallBusinessLandingPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
-                  <Link href="/signup">
+                  <Link href="/signup?landingPage=mrp-software-small-business">
                     Get Started
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link href="/demo">
+                  <Link href="/demo?landingPage=mrp-software-small-business">
                     Book a Demo
                   </Link>
                 </Button>
@@ -513,13 +513,13 @@ export default function MRPSmallBusinessLandingPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
-                <Link href="/signup">
+                <Link href="/signup?landingPage=mrp-software-small-business">
                   Start Now
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/demo">
+                <Link href="/demo?landingPage=mrp-software-small-business">
                   Talk to an Expert
                 </Link>
               </Button>
