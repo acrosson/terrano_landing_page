@@ -1,13 +1,14 @@
 'use client';
 
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/app/components/ui/card';
 import { ChevronRight } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
 
-export default function SignupPage() {
+function SignupContent() {
   let landingPage = useSearchParams().get('landingPage');
   if (!landingPage) {
     landingPage = '/';
@@ -72,5 +73,13 @@ export default function SignupPage() {
         </div>
       </section>
     </MainLayout>
+  );
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SignupContent />
+    </Suspense>
   );
 }

@@ -1,18 +1,20 @@
 'use client';
 
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
 
-export default function DemoPage() {
+function DemoContent() {
   let landingPage = useSearchParams().get('landingPage');
   if (!landingPage) {
     landingPage = '/';
   } else {
     landingPage = `/${landingPage}`;
   }
+
   return (
     <MainLayout landingPage={landingPage}>
       <section className="w-full py-12 md:py-24">
@@ -39,5 +41,13 @@ export default function DemoPage() {
         </div>
       </section>
     </MainLayout>
+  );
+}
+
+export default function DemoPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DemoContent />
+    </Suspense>
   );
 }
