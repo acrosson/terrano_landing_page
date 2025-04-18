@@ -1,7 +1,8 @@
-import Image from 'next/image';
+
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/app/components/ui/button';
-import { HeroGraphic } from '@/app/components/HeroGraphic';
+import { HeroGraphicERP } from '@/app/components/HeroGraphicERP';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
 import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
@@ -36,7 +37,7 @@ export default function LandingPage() {
                 </Button>
               </div>
             </div>
-            <HeroGraphic />
+            <HeroGraphicERP />
           </div>
         </div>
       </section>
