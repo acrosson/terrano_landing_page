@@ -1,6 +1,6 @@
 import type React from 'react';
 import type { Metadata } from 'next';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import Script from 'next/script';
 
 import './globals.css';
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
-      <GoogleAnalytics gaId={'G-GLD4MP5ZN8'} />
+      <GoogleTagManager gtmId={'GTM-MTWNMJM8'} />
       <Script
         id="hotjarAnalytics"
         strategy="afterInteractive"
