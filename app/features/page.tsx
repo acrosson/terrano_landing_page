@@ -7,10 +7,10 @@ import { MainLayout } from '@/app/components/MainLayout';
 import { IntegrationsSection } from '@/app/components/IntegrationsSection';
 import { Button } from '../components/ui/button';
 import { ChevronRight } from 'lucide-react';
+import { Suspense } from 'react';
 
-export default function FeaturesPage() {
+function FeaturesContent() {
   const searchParams = useSearchParams();
-
   const landingPage = searchParams.get('landingPage') ?? '/';
 
   const features = [
@@ -117,5 +117,17 @@ export default function FeaturesPage() {
         </div>
       </section>
     </MainLayout>
+  );
+}
+
+export default function FeaturesPage() {
+  return (
+    <Suspense fallback={
+      <div className="w-full h-screen flex items-center justify-center">
+        <div className="animate-pulse text-xl text-blue-primary">Loading...</div>
+      </div>
+    }>
+      <FeaturesContent />
+    </Suspense>
   );
 }
