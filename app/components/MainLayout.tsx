@@ -11,6 +11,7 @@ export function MainLayout({
   children: React.ReactNode;
   landingPage?: string;
 }) {
+  landingPage = landingPage?.replace(/^\/+/, '');
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
@@ -49,6 +50,9 @@ export function MainLayout({
             <SheetContent side="right">
               <SheetTitle>Navigation Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
+                <Link href={`${landingPage}`} className="text-sm font-medium hover:text-primary">Home</Link>
+                <Link href={`/features?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Features</Link>
+                <Link href={`/demo?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Schedule Demo</Link>
                 { landingPage === undefined && (
                   <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
                     Contact
@@ -94,8 +98,8 @@ export function MainLayout({
                 <Link href={landingPage || '/'} className="text-sm text-gray-400 hover:text-white">
                   Home
                 </Link>
-                <Link href={`${landingPage || ''}/#solution`} className="text-sm text-gray-400 hover:text-white">
-                  Solution
+                <Link href={`${landingPage || ''}/features`} className="text-sm text-gray-400 hover:text-white">
+                  Features
                 </Link>
                 <Link href={`${landingPage || ''}/#partnering`} className="text-sm text-gray-400 hover:text-white">
                   Work With Us

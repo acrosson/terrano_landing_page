@@ -5,10 +5,15 @@ import { HeroGraphicERP } from '@/app/components/HeroGraphicERP';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
 import { ChevronRight, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon, Rocket, Cpu } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
+import { ComparisonTable } from '@/app/components/ComparisonTable';
+import { ProductRating } from '@/app/components/ProductRating';
+import { LeadEmailCapture } from '@/app/components/LeadEmailCapture';
+import { FeaturesSection } from '@/app/components/FeaturesSection';
+import { IntegrationsSection } from '@/app/components/IntegrationsSection';
 
 export const metadata = {
-  title: 'Free cloud-based MRP System for Manufacturers',
-  description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started.',
+  title: 'Cloud-based MRP System for Manufacturers',
+  description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, & production tools. Get started.',
 };
 
 export default function MRPLandingPage() {
@@ -21,25 +26,14 @@ export default function MRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Modern MRP System Built for Manufacturers. <br />For Free. No Monthly Fees.
+                  Modern MRP System Built for Manufacturers.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No monthly fees. No steep learning curves.
+                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No steep learning curves.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="bg-blue-primary text-white hover:bg-blue-secondary" asChild>
-                  <Link href="/signup?landingPage=mrp-system">
-                    Get Started
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link href="/demo?landingPage=mrp-system">
-                    Book a Demo
-                  </Link>
-                </Button>
-              </div>
+              <ProductRating />
+              <LeadEmailCapture landingPage="mrp-system" />
             </div>
             <HeroGraphicERP />
           </div>
@@ -51,14 +45,20 @@ export default function MRPLandingPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-white">
-              Cloud-based MRP System for Free. Absolutely!
+              Cloud-based MRP Software without compromises!
             </h2>
             <p className="max-w-[900px] text-white/80 md:text-xl">
-              We believe every manufacturer deserves access to powerful tools. That&apos;s why we offer a completely free plan with no time limits or hidden fees. Get all the core features you need to run your factory efficiently.
+              All the features you need to run your manufacturing operations efficiently, without needing to compromise.
             </p>
           </div>
         </div>
       </section>
+
+      {/* The one app to run your entire business Section */}
+      <FeaturesSection landingPage="mrp" />
+
+      {/* Integrations Section */}
+      <IntegrationsSection />
 
       {/* Challenges Section - Update to "What Makes Us Different" */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
@@ -88,9 +88,9 @@ export default function MRPLandingPage() {
                       <DollarSign className="h-6 w-6 text-blue-primary" />
                     </div>
                     <div>
-                      <CardTitle className="mb-2">No Monthly SaaS Fees</CardTitle>
+                      <CardTitle className="mb-2">Low Monthly SaaS Fees</CardTitle>
                       <p className="text-sm text-muted-foreground">
-                        Keep costs low with our free plan—perfect for small shops and growing ops.
+                        Keep costs low with our low cost plan. Perfect for small shops and growing manufacturers.
                       </p>
                     </div>
                   </div>
@@ -328,93 +328,7 @@ export default function MRPLandingPage() {
       </section>
 
       {/* Comparison Table Section - New */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                Say Goodbye to Expensive and Overcomplicated MRP Tools
-              </h2>
-            </div>
-          </div>
-          <div className="mx-auto max-w-4xl py-12">
-            <p className="text-sm text-muted-foreground text-center mb-4 md:hidden">
-              ← Swipe to see more →
-            </p>
-            <div className="overflow-x-auto relative">
-              <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-muted/50 to-transparent pointer-events-none md:hidden" />
-              <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-muted/50 to-transparent pointer-events-none md:hidden" />
-              <div className="min-w-[800px]">
-                <div className="overflow-hidden rounded-xl border bg-white shadow">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="bg-muted/50">
-                        <th className="text-left p-4 text-lg font-medium">Feature</th>
-                        <th className="text-center p-4 text-lg font-medium">
-                          <div className="flex flex-col items-center">
-                            <span className="text-blue-primary">Terrano</span>
-                            <span className="text-sm text-muted-foreground font-normal">Modern MRP</span>
-                          </div>
-                        </th>
-                        <th className="text-center p-4 text-lg font-medium">
-                          <div className="flex flex-col items-center">
-                            <span>Katana</span>
-                            <span className="text-sm text-muted-foreground font-normal">Legacy MRP</span>
-                          </div>
-                        </th>
-                        <th className="text-center p-4 text-lg font-medium">
-                          <div className="flex flex-col items-center">
-                            <span>MRPeasy</span>
-                            <span className="text-sm text-muted-foreground font-normal">Legacy MRP</span>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">Free Monthly Plan</td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">$0/user/month</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-xl">$399/month</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-xl">$79/user/month</span></td>
-                      </tr>
-                      <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">Free Monthly Plan</td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-2xl">×</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-2xl">×</span></td>
-                      </tr>
-                      <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">AI Features</td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-2xl">×</span></td>
-                        <td className="text-center p-4"><span className="text-red-500 text-2xl">×</span></td>
-                      </tr>
-                      <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">Implementation Time</td>
-                        <td className="text-center p-4"><span className="font-medium text-green-600">2 weeks</span></td>
-                        <td className="text-center p-4"><span className="text-muted-foreground">8 weeks</span></td>
-                        <td className="text-center p-4"><span className="text-muted-foreground">8 weeks</span></td>
-                      </tr>
-                      <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">Real-Time Inventory</td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                      </tr>
-                      <tr className="border-t hover:bg-muted/50 transition-colors">
-                        <td className="text-left p-4">Production Scheduling</td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                        <td className="text-center p-4"><span className="text-green-600 text-xl">✓</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ComparisonTable price="19" />
 
       {/* Team Background Section */}
       {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
@@ -508,7 +422,7 @@ export default function MRPLandingPage() {
                 Ready to Simplify Your Production?
               </h2>
               <p className="text-xl text-muted-foreground">
-                Get started today—<span className="font-bold">free forever</span> for small teams
+                Get started today.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

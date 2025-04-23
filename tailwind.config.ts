@@ -60,6 +60,7 @@ module.exports = {
         'grey-light-one': '#dfdfdf',
         'grey-light-two': '#ececec',
   			green: '#00FF00',
+				'green-primary': '#35AC70',
   			darkgrey: '#1c1c1c',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
