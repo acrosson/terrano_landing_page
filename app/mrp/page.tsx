@@ -26,10 +26,10 @@ export default function MRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Modern MRP cloud-based Software Built for Manufacturers. <br />No Monthly Fees.
+                  Modern MRP cloud-based Software Built for Manufacturers.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No monthly fees. No steep learning curves.
+                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No steep learning curves.
                 </p>
               </div>
               <ProductRating />
@@ -88,9 +88,9 @@ export default function MRPLandingPage() {
                       <DollarSign className="h-6 w-6 text-blue-primary" />
                     </div>
                     <div>
-                      <CardTitle className="mb-2">No Monthly SaaS Fees</CardTitle>
+                      <CardTitle className="mb-2">Low Monthly SaaS Fees</CardTitle>
                       <p className="text-sm text-muted-foreground">
-                        Keep costs low with our free plan—perfect for small shops and growing ops.
+                        Keep costs low with our low cost plan. Perfect for small shops and growing manufacturers.
                       </p>
                     </div>
                   </div>
@@ -422,7 +422,7 @@ export default function MRPLandingPage() {
                 Ready to Simplify Your Production?
               </h2>
               <p className="text-xl text-muted-foreground">
-                Get started today—<span className="font-bold">free forever</span> for small teams
+                Get started today.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
