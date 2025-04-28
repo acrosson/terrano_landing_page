@@ -30,15 +30,6 @@ export function MainLayout({
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-6">
-            { landingPage === undefined && (
-              <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
-                Contact
-              </Link>
-            )}
-          </nav>
-
           {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
@@ -53,11 +44,9 @@ export function MainLayout({
                 <Link href={`${landingPage}`} className="text-sm font-medium hover:text-primary">Home</Link>
                 <Link href={`/features?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Features</Link>
                 <Link href={`/demo?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Schedule Demo</Link>
-                { landingPage === undefined && (
-                  <Link href={'/contact'} className="text-sm font-medium hover:text-primary">
-                    Contact
-                  </Link>
-                )}
+                <Link href={`/contact?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">
+                  Contact
+                </Link>
               </nav>
             </SheetContent>
           </Sheet>
@@ -98,7 +87,7 @@ export function MainLayout({
                 <Link href={landingPage || '/'} className="text-sm text-gray-400 hover:text-white">
                   Home
                 </Link>
-                <Link href={`${landingPage || ''}/features`} className="text-sm text-gray-400 hover:text-white">
+                <Link href={`/features?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
                   Features
                 </Link>
                 <Link href={`${landingPage || ''}/#partnering`} className="text-sm text-gray-400 hover:text-white">
@@ -107,11 +96,9 @@ export function MainLayout({
                 <Link href={`${landingPage || ''}/#use-cases`} className="text-sm text-gray-400 hover:text-white">
                   Use Cases
                 </Link>
-                { landingPage === undefined && (
-                  <Link href={'/contact'} className="text-sm text-gray-400 hover:text-white">
-                    Contact
-                  </Link>
-                )}
+                <Link href={`/contact?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
+                  Contact
+                </Link>
               </nav>
             </div>
 

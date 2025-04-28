@@ -1,10 +1,17 @@
+'use client';
+
 import { Button } from '@/app/components/ui/button';
 import { MainLayout } from '@/app/components/MainLayout';
 import { ChevronRight } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 
-export default function ContactPage() {
+function ContactContent() {
+  const searchParams = useSearchParams();
+  const landingPage = searchParams.get('landingPage') ?? '/';
+
   return (
-    <MainLayout>
+    <MainLayout landingPage={landingPage}>
       {/* Hero Section */}
       <section className="w-full py-12 md:py-20 lg:py-24 xl:py-32">
         <div className="container px-4 md:px-6">
@@ -33,5 +40,17 @@ export default function ContactPage() {
         </div>
       </section>
     </MainLayout>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={
+      <div className="w-full h-screen flex items-center justify-center">
+        <div className="animate-pulse text-xl text-blue-primary">Loading...</div>
+      </div>
+    }>
+      <ContactContent />
+    </Suspense>
   );
 }
