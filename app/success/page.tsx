@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { MainLayout } from '@/app/components/MainLayout';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 export default function SignupPage() {
   useEffect(() => {
@@ -10,7 +10,7 @@ export default function SignupPage() {
     const sendConversionEvent = () => {
       console.log('Sending conversion event');
       try {
-        sendGAEvent('conversion_event_submit_lead_form');
+        sendGTMEvent({ event: 'conversion_event_submit_lead_form'});
       } catch (error) {
         console.error('Failed to send GA event:', error);
       }
