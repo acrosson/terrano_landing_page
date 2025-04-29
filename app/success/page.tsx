@@ -10,7 +10,7 @@ export default function SignupPage() {
     const sendConversionEvent = () => {
       console.log('Sending conversion event');
       try {
-        sendGTMEvent({ event: 'conversion_event_submit_lead_form'});
+        sendGTMEvent({ event: 'conversion_event_submit_lead_form', conversion_id: '16979578926', conversion_label: 'DCN_CN61u78aEK6gv6A_'});
       } catch (error) {
         console.error('Failed to send GA event:', error);
       }
