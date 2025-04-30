@@ -68,7 +68,7 @@ export function ComparisonTable({ price = '0' }: { price: string }) {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tighter">
-              Say Goodbye to Expensive and Overcomplicated MRP Tools
+              Say Goodbye to Expensive and Overcomplicated ERP / MRP Tools
             </h2>
           </div>
         </div>
