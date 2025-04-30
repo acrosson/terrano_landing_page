@@ -52,7 +52,7 @@ export function MainLayout({
           </Sheet>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button className="bg-blue-primary text-white hover:bg-blue-secondary"><Link href="/signup" rel="noopener noreferrer">Get Started</Link></Button>
+            <Button className="bg-blue-primary text-white hover:bg-blue-secondary"><Link href={`/signup?landingPage=${landingPage}`} rel="noopener noreferrer">Get Started</Link></Button>
           </div>
         </div>
       </header>
