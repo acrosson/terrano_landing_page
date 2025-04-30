@@ -13,7 +13,7 @@ import { IntegrationsSection } from '@/app/components/IntegrationsSection';
 
 export const metadata = {
   title: 'Manufacturing Order Management Software',
-  description: 'Streamline your manufacturing processes with advanced planning, real-time inventory, and production control tools. Get your product tour today!',
+  description: 'Manage custom orders, BOMs, inventory, and production - all in one ERP + MRP solution. Get your product tour today!',
 };
 
 export default function ManufacturingOrderManagementLandingPage() {
