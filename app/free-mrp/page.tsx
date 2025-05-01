@@ -13,7 +13,7 @@ import { IntegrationsSection } from '@/app/components/IntegrationsSection';
 
 export const metadata = {
   title: 'Free MRP Software for Manufacturers',
-  description: 'AI-powered MRP software built for manufacturers. Run your factory smarter with real-time inventory, production tools, and no monthly fees. Get started.',
+  description: 'Plan materials, track jobs, and schedule production in one easy-to-use FREE MRP software',
 };
 
 export default function FreeMRPLandingPage() {
