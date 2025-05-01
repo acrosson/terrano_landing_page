@@ -12,8 +12,8 @@ import { ComparisonTable } from '@/app/components/ComparisonTable';
 import { FeaturesSection } from '@/app/components/FeaturesSection';
 
 export const metadata = {
-  title: 'Cloud-based MRP Software for Manufacturers',
-  description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, and production tools. Get started.',
+  title: 'MRP Software Built for Manufacturers',
+  description: 'Plan materials, track jobs, and schedule production in one easy-to-use MRP system.',
 };
 
 export default function MRPLandingPage() {
@@ -26,10 +26,10 @@ export default function MRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Modern MRP cloud-based Software Built for Manufacturers.
+                  MRP Software Built for Manufacturers. Cloud-based. All in one solution.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No steep learning curves.
+                  Plan materials, track jobs, and schedule production in one easy-to-use MRP software.
                 </p>
               </div>
               <ProductRating />
