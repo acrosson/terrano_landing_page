@@ -26,10 +26,10 @@ export default function FreeMRPLandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Cloud-based MRP Software Built for Manufacturers. <br />No Monthly Fees.
+                  Free MRP Software for Manufacturers. <br />Cloud-based. All in one solution.
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  Run your factory smarter with <b>AI-powered planning</b>, real-time inventory, and production tools. No monthly fees. No steep learning curves.
+                  Plan materials, track jobs, and schedule production in one easy-to-use FREE MRP software. Powerful software for MRP, BOM, and production scheduling.
                 </p>
               </div>
               <ProductRating />
