@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/app/components/ui/button';
-import { HeroGraphicERP } from '@/app/components/HeroGraphicERP';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
-import { ChevronRight, ArrowDown, Database, LineChart, Users, DollarSign, Lock, ShieldCheckIcon } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { MainLayout } from '@/app/components/MainLayout';
 
 export default function LandingPage() {
@@ -49,7 +47,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Final CTA Section */}
       <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
         <div className="container px-4 md:px-6">
