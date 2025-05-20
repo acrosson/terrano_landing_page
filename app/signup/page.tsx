@@ -23,10 +23,10 @@ function SignupContent() {
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Get Started with Terrano MRP
+                Get Started with Terrano Manufacturing OS
               </h1>
               <p className="text-lg text-muted-foreground">
-                Setting up your factory management system is easy. Complete the signup form and schedule a quick onboarding call with our team.
+                Setting up your account is easy. Complete the signup form and schedule a quick onboarding call with our team.
               </p>
             </div>
 

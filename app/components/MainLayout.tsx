@@ -90,12 +90,6 @@ export function MainLayout({
                 <Link href={`/features?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
                   Features
                 </Link>
-                <Link href={`${landingPage || ''}/#partnering`} className="text-sm text-gray-400 hover:text-white">
-                  Work With Us
-                </Link>
-                <Link href={`${landingPage || ''}/#use-cases`} className="text-sm text-gray-400 hover:text-white">
-                  Use Cases
-                </Link>
                 <Link href={`/contact?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
                   Contact
                 </Link>

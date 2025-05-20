@@ -12,7 +12,7 @@ import { FeaturesSection } from '@/app/components/FeaturesSection';
 import { IntegrationsSection } from '@/app/components/IntegrationsSection';
 
 export const metadata = {
-  title: 'Cloud-based MRP Software for Small Businesses',
+  title: 'MRP Software for Small Businesses',
   description: 'AI-powered cloud-based MRP software built for manufacturers. Run your factory smarter with real-time inventory, and production tools. Get started.',
 };
 
