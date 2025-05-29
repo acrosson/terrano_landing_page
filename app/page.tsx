@@ -6,7 +6,7 @@ import { MainLayout } from '@/app/components/MainLayout';
 
 export default function LandingPage() {
   return (
-    <MainLayout landingPage={'/'}>
+    <MainLayout landingPage={'/'} includeFeatures={false}>
       {/* Hero Section */}
       <section className="w-full py-12 md:py-20 lg:py-24 xl:py-32">
         <div className="container px-4 md:px-6">
@@ -14,11 +14,12 @@ export default function LandingPage() {
             <div className="flex flex-col justify-center space-y-4 w-full">
               <div className="space-y-2 w-full">
                 <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none">
-                  Supercharge Your Manufacturing Business with AI.
+                  Supercharge Your Operations with AI.
                 </h1>
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground">Grow Your Revenue. Run Leaner. Scale Smarter.</h2>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground lg:text-xl">
-                  Run your entire business from a single platform. Reduce material waste, and automate operations - all from a platform built for modern manufacturers.
+                  Run your entire business from a single platform.
+                  {/* Run your entire business from a single platform. Reduce material waste, and automate operations - all from a platform built for modern manufacturers. */}
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -55,7 +56,7 @@ export default function LandingPage() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to transform your business operations?</h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Let us help you transform your business operations with using the most advanced operating platform for manufacturers.
+                Let us help you transform your business operations with using the most advanced operating platform for businesses.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

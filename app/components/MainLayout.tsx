@@ -7,9 +7,11 @@ import { Menu, Linkedin, Youtube } from 'lucide-react';
 export function MainLayout({
   children,
   landingPage,
+  includeFeatures = true,
 }: {
   children: React.ReactNode;
   landingPage?: string;
+  includeFeatures?: boolean;
 }) {
   landingPage = landingPage?.replace(/^\/+/, '');
   return (
@@ -42,7 +44,7 @@ export function MainLayout({
               <SheetTitle>Navigation Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
                 <Link href={`${landingPage}`} className="text-sm font-medium hover:text-primary">Home</Link>
-                <Link href={`/features?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Features</Link>
+                { includeFeatures && <Link href={`/features?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Features</Link> }
                 <Link href={`/demo?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">Schedule Demo</Link>
                 <Link href={`/contact?landingPage=${landingPage}`} className="text-sm font-medium hover:text-primary">
                   Contact
@@ -87,9 +89,7 @@ export function MainLayout({
                 <Link href={landingPage || '/'} className="text-sm text-gray-400 hover:text-white">
                   Home
                 </Link>
-                <Link href={`/features?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
-                  Features
-                </Link>
+                { includeFeatures && <Link href={`/features?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">Features</Link> }
                 <Link href={`/contact?landingPage=${landingPage}`} className="text-sm text-gray-400 hover:text-white">
                   Contact
                 </Link>
