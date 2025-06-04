@@ -31,7 +31,7 @@ export default function SignupPage() {
     trySendEvent();
   }, []);
   return (
-    <MainLayout landingPage="/mrp">
+    <MainLayout landingPage="/">
       <section className="w-full py-12 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">

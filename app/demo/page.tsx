@@ -25,7 +25,7 @@ function DemoContent() {
                 Book a Demo
               </h1>
               <p className="text-lg text-muted-foreground">
-                We look forward to showing you how Terrano Manufacturing OS can transform your manufacturing operations. Schedule a demo using the link below.
+                We look forward to showing you how Terrano can transform your business operations. Schedule a demo using the link below.
               </p>
             </div>
 
