@@ -6,14 +6,14 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Terrano - The ERP for modern businesses',
+  title: 'Terrano',
   description:
-    'The most advanced ERP for modern businesses. No monthly fees. Powered by AI.',
+    'The most advanced OS for modern businesses. No monthly fees. Powered by AI.',
   metadataBase: new URL('https://terrano.ai'),
   openGraph: {
-    title: 'Terrano - The ERP for modern businesses',
+    title: 'Terrano',
     description:
-      'The most advanced ERP for modern businesses. No monthly fees. Powered by AI.',
+      'The most advanced OS for modern businesses. No monthly fees. Powered by AI.',
     type: 'website',
     images: [
       {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: 'Terrano - The ERP for modern businesses',
+    title: 'Terrano',
     description:
-      'The most advanced ERP for modern businesses. No monthly fees. Powered by AI.',
+      'The most advanced OS for modern businesses. No monthly fees. Powered by AI.',
     card: 'summary_large_image',
     images: ['/images/og_image_min.jpg'],
   },
