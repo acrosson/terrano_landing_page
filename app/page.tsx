@@ -39,7 +39,7 @@ export default function LandingPage() {
             <div className="relative w-full h-[600px]">
               <div className="absolute inset-0 animate-gradient bg-gradient-to-r from-blue-primary to-green-primary bg-[length:200%_200%] opacity-80 -z-10"></div>
               <Image
-                src="/images/all_in_one_super_platform.png"
+                src="/images/all_in_one_super_platform_2.png"
                 alt="All in one super platform"
                 fill
                 className="object-cover"
